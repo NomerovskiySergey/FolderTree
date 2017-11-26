@@ -1,0 +1,9 @@
+﻿@model IEnumerable<FolderTree.Core.Entities.RouteEntity>
+
+<h1>@ViewBag.Title</h1>
+
+@foreach (FolderTree.Core.Entities.RouteEntity i in Model)
+{
+    <a href="@Url.RouteUrl(i.Name)">@i.Name</a>
+    <br/>
+}
